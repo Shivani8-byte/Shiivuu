@@ -1,0 +1,29 @@
+
+import java.util.Scanner;
+
+public class divisble
+{
+	public static void main(String[] args) 
+	{
+		int a, b, n=0;
+		Scanner s = new Scanner(System.in);
+		 System.out.println("Enter no.: ");
+		 a = s.nextInt();
+		 while(a > 0)
+		 {
+			 b = a % 10;
+			 n = n + b;
+			 a = a / 10;
+		 }
+	    System.out.println("Sum of array= " +n);
+	
+		n= s.nextInt();
+		if(n % 5 == 0) {
+			System.out.println(n+" It is divisble by 5");   //DIVISBLE BY 5
+		}
+		else
+		{
+			System.out.println(n+" Is divisble by 3");	    //DIVISBLE BY 3
+		}
+	}
+}
