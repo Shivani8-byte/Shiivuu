@@ -1,0 +1,23 @@
+
+import java.util.*;
+
+public class StringMethod {
+	public static void main(String  args[]) {
+		String targetstring ="Java is programming language";
+		String s1 ="JAVA";
+		String s2= "Java";
+		String s3 = " Hello Java ";
+		
+		
+		System.out.println("Substring of string:"+targetstring.substring(7));
+		System.out.println("Substring of string:"+targetstring.substring(7,19));
+		System.out.println("Trim string:"+s3.trim());
+		
+		char[] 
+				charArray=s2.toCharArray();
+		
+		
+		System.out.println("Print last element of array:"+charArray[2]);
+				}
+
+}
