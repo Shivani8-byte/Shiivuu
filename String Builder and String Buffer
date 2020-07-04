@@ -1,0 +1,61 @@
+
+public class expp {
+	public static void StrConcat(String str1)
+	{
+		str1 = str1 + "Shivani";
+	}
+	public static void StrBufConcat(StringBuffer str2)
+	{
+		str2.append("Shivani");
+	}
+	public static void StrBuildConcat(StringBuilder str3)
+	{
+		str3.append("Shivani ");
+	}
+	public static void main(String[] args)
+	{
+		String s = "Java "+"is "+"programming "+"language ";
+		System.out.println(s);
+		
+		String s1 = new String("Java");
+		String s2 = new String("is");
+		String s3 = new String("programming");		
+		String s4 = new String("language");
+		
+		System.out.println(s1+s2+s3+s4);
+		
+	    //LENGTH
+		System.out.println("Length of sstring:"+s.length());
+		System.out.println("Substring of sstring:"+s.substring(7));
+		System.out.println("Substring of sstring:"+ s.substring(7,19));
+		System.out.println("Equal of sstring:"+ s1.equals(s2));
+		//CONCAT
+		String str1 = "Hello!!!";
+		StrConcat(str1);                  
+		System.out.println("The final String is:" + str1);
+		System.out.println("Substring :"+str1.substring(3));
+		//STRING BUFFER
+		StringBuffer str2 = new StringBuffer("Hello!!!");
+		StrBufConcat(str2);                               
+		System.out.println("The final String is:" + str2);
+		//REVERSE
+		str2.reverse ();
+		if(str1.equals(str2.toString()))
+		{
+			System.out.println("String is Palindrome");
+		}
+		else
+		{
+			System.out.println("String is not Palindrome");
+		}
+		System.out.println("");
+		//STRING BUILDER
+		StringBuilder str3 = new StringBuilder("Hello!!!");
+		StrBuildConcat(str3);
+		System.out.println("The final String is:" + str3 + s);	  
+		   //DELETE
+		str3.delete(5, 7);                        
+		System.out.println(str3);
+	}
+}
+
